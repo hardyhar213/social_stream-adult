@@ -191,7 +191,8 @@
 	"https://*.on24.com/view/*",
     "https://*.meetme.com/*",
     "https://meetme.com/*",
-	"https://fansly.com/chatroom/*"
+	"https://fansly.com/chatroom/*",
+	  "https://stripchat.com/*"
   ],
   "content_scripts": [
     {
@@ -201,6 +202,10 @@
     {
       "js": [ "./sources/zapstream.js" ],
       "matches": [ "https://zap.stream/*" ]
+    },
+    {
+      "js": [ "./sources/stripchat.js" ],
+      "matches": [ "https://stripchat.com/*" ]
     },
     {
       "js": [ "./sources/meetme.js" ],
